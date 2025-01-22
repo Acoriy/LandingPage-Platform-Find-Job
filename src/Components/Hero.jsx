@@ -55,7 +55,7 @@ const Hero = () => {
         </div>
 
         {/* Images */}
-        <div className="relative w-[375px] h-[348px] lg:w-2/4  flex items-center justify-center top-[-170px] lg:top-0 lg:translate-y-[40px] translate-x-[30px] translate-y-[95px] ">
+        <div className="relative w-[375px] h-[348px] lg:w-2/4  flex items-center justify-center  lg:top-0 lg:translate-y-[40px] translate-x-[30px] translate-y-[-120px] ">
           <img
             src={HeroImg}
             alt="HeroImg"
