@@ -5,6 +5,7 @@ import Hero from './Components/Hero'
 import Navebar from './Components/Navebar'
 import {motion} from "framer-motion"
 import { useState } from 'react'
+// import Partenaire from './Components/Partenaire'
 
 function App() {
    const [x , setX] = useState(0)
@@ -34,6 +35,9 @@ function App() {
           <div id='home'>
              <Hero/>
           </div>
+          {/* <div>
+            <Partenaire/>
+          </div> */}
        </main>
     </div>
   )

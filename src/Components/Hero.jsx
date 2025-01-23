@@ -7,11 +7,12 @@ import Peaple1 from "../assets/Img/Ellipse1.png";
 import Peaple2 from "../assets/Img/Ellipse2.png";
 import Peaple3 from "../assets/Img/Ellipse3.png";
 import Peaple4 from "../assets/Img/Ellipse4.png";
-import PeapleFIndJob from "../assets/Img/Layouts/PeapleFIndJob";
+import PeapleFIndJob from "../Layouts/PeapleFIndJob";
+import PartnaireBrand from "./PartnaireBrand";
 
 const Hero = () => {
   return (
-    <div className=" w-full bg-BgColor pt-32 lg:pt-0 ">
+    <div className="w-full bg-BgColor pt-32 lg:pt-0  ">
       <div className="container min-h-screen flex flex-col lg:flex-row items-start lg:items-center justify-between w-full ">
         <div className="w-2/5 flex flex-col gap-3 lg:gap-8 relative">
           <div className="relative w-full">
@@ -27,9 +28,7 @@ const Hero = () => {
                 Job / Position
               </div>
               <span className="text-[#bbbdc1]"> | </span>
-              <div className="text-[#bbbdc1] text-16 font-bold">
-                Location
-              </div>
+              <div className="text-[#bbbdc1] text-16 font-bold">Location</div>
               <span className="text-[#91949b]"> | </span>
               <button className=" bg-[#7BC678] text-[#FFF] text-[12px] lg:text-[16px] font-bold w-[101px] h-[46px] lg:h-[64px] lg:w-[139px] rounded-[10px]">
                 Search
@@ -82,32 +81,17 @@ const Hero = () => {
             className="w-[30px] h-[30px] lg:w-[72px] lg:h-[72px] absolute right-[115px] bottom-[8px] lg:translate-y-[-170px] translate-y-[-190px] translate-x-[50px]"
           />
 
-          {/* Peaple Find Job */}
-          <PeapleFIndJob Peaple1={Peaple1} Peaple2={Peaple2} Peaple3={Peaple3} Peaple4={Peaple4}/>
-          {/* <div className="absolute w-[286px] h-[125px]  flex flex-col justify-center items-center   bg-[#FFF] z-30 top-[300px] right-[1px] rounded-[10px] shadow-md  ">
-            <h2 className="text-[16px] font-medium text-[#92AABD] absolute top-[20px] text-start mr-10">
-              20k+ People Find Job!
-            </h2>
-            <div className="flex flex-row relative bottom-[5px] items-start mr-[5px]">
-              <div className="w-[50px] h-[50px]  rounded-full absolute right-[55px] border-peaple">
-                <img src={Peaple1} alt="imgPeaple" />
-              </div>
-              <div className="w-[50px] h-[50px]  rounded-full absolute right-[15px]">
-                <img src={Peaple2} alt="imgPeaple" />
-              </div>
-              <div className="w-[50px] h-[50px]  rounded-full absolute right-[-20px] ">
-                <img src={Peaple3} alt="imgPeaple" />
-              </div>
-              <div className="w-[50px] h-[50px]  rounded-full absolute  right-[-60px]">
-                <img src={Peaple4} alt="imgPeaple" />
-              </div>
-              <div className="w-[50px] h-[50px] bg-[#FFE7DB] rounded-full absolute  right-[-100px] text-[#3F475C] text-[16px] font-medium flex items-center justify-center ">
-                +
-              </div>
-            </div>
-          </div> */}
+          {/* Peaple Find Job div */}
+          <PeapleFIndJob
+            Peaple1={Peaple1}
+            Peaple2={Peaple2}
+            Peaple3={Peaple3}
+            Peaple4={Peaple4}
+          />
         </div>
       </div>
+      {/* Partonaires */}
+      <PartnaireBrand />
     </div>
   );
 };
